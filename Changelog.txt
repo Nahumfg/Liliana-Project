@@ -1,0 +1,327 @@
+::::::::Instrucciones:::::::::::
+      Abrir con WordPad  (Si es que estás en Windows).
+
+Edici�n para desarrolladores y estudiantes.
+
+Nota: para ver los cambios en cada versión hasta la más actual, leer hasta abajo.
+
+Para ejecutar en Windows basta con dar doble click en el archivo: 
+
+<<<<<<< HEAD
+Lisaproyect.jar Contenido en la carpeta llamada: Liliana VX.X.X
+=======
+Lilianaproyect.jar Contenido en la carpeta llamada: Liliana
+>>>>>>> origin/master
+
+<<<<<<< HEAD
+**Para que la conexi�n con arduino funcione favor de usar las librer�as adjuntas en la carpeta ArduinoLib, seguir instrucciones, de lo contrario, no funcionar�.
+
+NOTA: Al actualizar Java hay que mover las librer�as a la carpeta donde est� la versi�n actual
+=======
+**Para que la conexión con arduino funcione favor de usar las librerías adjuntas en la carpeta ArduinoLib, seguir instrucciones, de lo contrario, no funcionará.
+>>>>>>> origin/master
+
+Para ejecutarlo 
+
+*En linux hay que darle permiso de ejecución y luego ejecutarlo.
+
+<<<<<<< HEAD
+Nota: En esta edici�n se a�adi� una funci�n que guarda un registro de actividades relevantes durante la ejecuci�n del programa, se crea un archivo llamado Registro.rec el cual puede ser f�cilmente le�do abr�endolo con cualquier editor de texto.
+=======
+Nota: En esta edición se añadió una función que guarda un registro de actividades relevantes durante
+      la ejecución del programa, se crea un archivo llamado Registro.rec el cual puede ser fácilmente
+      leído abríendolo con cualquier editor de texto.
+>>>>>>> origin/master
+
+
+
+::::::::::::::::::::::::::::::::
+
+
+================================
+
+LISA project VERSIÓN ALPHA 0.0.4
+
+================================
+
+
+Novedades desde la versión 0.0.2
+
+
+*Varios Bugs corregidos
+
+*Se añadió un reloj del Sistema
+
+*Se mejoró la interactividad de los botones
+
+*Ahora se puede insertar un comando manualmente
+
+
+
+
+================================
+
+LISA project VERSIÓN ALPHA 0.0.8
+
+================================
+
+
+
+Novedades desde la versión 0.0.4
+
+
+*Algunos errores corregidos
+
+*Ahora la aplicación se esconde en la barra del sistema
+
+*Se mejoró la interactividad de los botones
+
+
+
+================================
+
+LISA project VERSIÓN BETA 0.1.1
+
+================================
+
+
+
+Novedades desde la versión 0.0.8
+
+
+
+--Lo más notable--
+
+*Se ha añadido compatibilidad con Windows 8 y 8.1.
+
+*Ya no se crea un ícono en la barra del sistema cada vez que se minimiza
+
+
+
+--otras novedades--
+
+*Se corrigieron algunos errores.
+
+*Se mejoró la interactividad de los botones.
+
+
+
+================================
+
+LISA project VERSIÓN BETA 0.1.2
+
+================================
+
+
+
+Novedades desde la versión 0.1.1
+
+
+*Se añadió un lanzador de mensajería instantánea
+
+*Ahora las etiquetas de las categorías se ven al pasar el móuse sobre los botones
+
+*se mejoró la interactividad de algunos botones
+
+*Se modificó el fondo de la ventana de Multimedia
+
+
+Algunos errores corregidos
+
+
+
+================================
+
+LISA project VERSIÓN BETA 0.1.3
+
+================================
+
+
+
+Novedades desde la versión 0.1.2
+
+
+*Se añadieron etiquetas informativas en todas las ventanas que aparecen al posar el mouse sobre el botón
+
+*Se mejoró la interactividad de todos los botones
+
+*Se añadió una ventana para software variado, (disponible próximamente).
+
+
+
+-Se espera poder añadir una base de datos de usuarios en futuras actualizaciones.
+
+-Pronto habrá compatibilidad con mac.
+
+================================
+
+LISA project VERSIÓN BETA 0.1.4
+================================
+
+
+
+Novedades desde la versión 0.1.3
+
+*Ahora sólo se puede ejecutar la aplicación una vez.
+*Algunos errores corregidos.
+
+================================
+
+LISA project VERSIÓN BETA 0.1.41
+================================
+
+
+
+Novedades desde la versión 0.1.4
+
+Nota: le puse sólamente el 41 porque se le hicieron cambios menores al programa
+
+*Algunos errores corregidos.
+*Ahora al ejecutar el programa en vez de el ícono de Java está un ícono de Linux.
+*se cambió el aspecto de la ventana principal.
+
+================================
+LISA project VERSIÓN BETA 0.1.5
+================================
+
+Novedades desde la versión 0.1.41
+
+*Se eliminó el botón salir de la ventana principal para evitar cerrar la aplicación accidentalmente
+*Se modificó el diseño de los botones
+*Corrección de errores
+*Se añadió una función para listar los proceso ejecutados hasta el momento
+
+==============================================
+LISA project VERSIÓN BETA 0.1.6 School Edition
+==============================================
+
+Novedades desde la versión 0.1.5
+
+*Corrección de algunos errores.
+*Se añadió compatibilidad con Windows 8.1
+*Se añadió un registro que guarda en un archivo los sucesos
+ relevantes durante la ejecución del programa (incompleto).
+ 
+
+==============================================
+LISA project VERSIÓN BETA 0.1.7 School Edition
+==============================================
++Arduino!!!
+Novedades desde la versión 0.1.6
+
+*Se agregó una interfáz de usuario que puede enviar caracteres a un Arduino.
+*Se hicieron algunas correciones de errores.
+*Ahora puedes revisar si tu versión de Lisa es la más actual, se añadió una función que abre un link en tu navegador que donde está la versión más actual de la aplicación.
+
+===============================================
+LISA project VERSIÓN BETA 0.1.71 School Edition
+===============================================
+
+Novedades desde la versión 0.1.7
+
+*Se añadió un botón para saber la ubicación del registro de actividades.
+*Se corrigieron errores menores.
+*Se modificó la apariencia de una de las ventanas.
+*Se detecto un error en los comandos del visualizador de PDF en Windows 8 el cual no ha sido corregiro, estamos trabajando en solucionarlo.
+
+===============================================
+LISA project VERSIÓN BETA 0.1.72 School Edition
+===============================================
+
+Novedades desde la versión 0.1.71
+
+*Se añadió la función de apagado, reiniciado y cierre de sesion pero por ahora solo funciona en Windows.
+*Se corrigió un error en el lanzador del Lector de PDF, aún se completa pero estamos trabajando en ello.
+*Hubo un avance significativo en el gestor para la base de datos pero aún no se encuentra disponible.
+
+==============================================
+LISA project VERSIÓN BETA 0.1.73 School Edition
+==============================================
+
+Novedades desde la versión 0.1.72
+
+*Se añadió una función para usar una utilidad de recibir y enviar archivos mediante el Bluetooth (solo para windows por el momento).
+*Se modificó el área de ayuda e información, por el momento está a modo de prueba por cuestiones de las rutas en los archivos.
+
+==============================================
+LISA project VERSIÓN BETA 0.1.74 School Edition
+==============================================
+
+Novedades desde la versión 0.1.73
+
+*Fue modificado el aspecto de la ventana principal, ahora en forma de dock de escritorio.
+*Se agregó la capacidad de reproducir sonido al iniciar el programa.
+
+==============================================
+LISA project VERSIÓN 0.1.75 School Edition
+==============================================
+
+Novedades desde la versión 0.1.73
+
+*Se añadió una función para poder programar el apagado con tiempo del equipo (solo en windows).
+
+Novedades para la siguiente versi�n:
+-Habr� un cambio de aspecto y nuevo nombre al proyecto.
+
+==============================================
+Kassandra project VERSIÓN 0.1.8 School Edition
+==============================================
+
+Novedades desde la versión 0.1.75
+
+*Se cambió el nombre a proyecto Kassandra.
+*Se agregó un diálogo de confirmación para salir del programa.
+*Se agregó un temporizador a la función de apagar o cerrar sesión.
+*Se agregó una función para ver información del sistema en el áera de ayuda.
+*Se corrigieron algunos errores menores.
+*Se agregó la funcionalidad de poder enviar datos a arduino directamente desde el teclado de tu computadora.
+
+<<<<<<< HEAD
+=======
+Novedades para la siguiente versión:
+-Habrá un cambio de aspecto y nuevo nombre al proyecto.
+>>>>>>> origin/master
+
+==============================================
+Kassandra project VERSIÓN 0.1.9 School Edition
+==============================================
+
+Novedades desde la versión 0.1.8
+
+*Se modificó el aspecto de la ventana principal.
+*Se mejoró la funcionalidad de la ventana para Arduino.
+*Se corrigieron errores menores.
+
+Novedades para la siguiente versi�n:
+-Habr� un cambio de aspecto y nuevo nombre al proyecto.
+
+==============================================
+Liliana project VERSI�N 0.2.0 School Edition
+==============================================
+
+Novedades desde la versi�n 0.1.9
+
+*Se agreg� compatibilidad con Windows 10.
+*Se modific� el aspecto de las ventanas.
+*Se modific� la licencia y el nombre del proyecto.
+
+==============================================
+Liliana project VERSI�N 0.2.01 School Edition
+==============================================
+
+Novedades desde la versi�n 0.2.0
+
+*Se agreg� una utilidad de atajos a sitios Web de inter�s
+*Se agreg� un bot�n de donativos por paypal (Gracias).
+
+==============================================
+Liliana project VERSI�N 0.2.1 School Edition
+==============================================
+
+Novedades desde la versi�n 0.2.01
+
+*Correcci�n de errores
+*Se implement� la funcionalidad de apagar el equipo en Linux (prueba).
+*Se agreg� la funci�n de crear un registro de errores para seguimiento del desarrollador.
+*Se agreg� la funci�n para enviar opinion por correo al desarrollador.
+*Se detect� un error en la visualizaci�n de la interf�z gr�fica en Linux, se implement� un c�digo de correcci�n (prueba).
