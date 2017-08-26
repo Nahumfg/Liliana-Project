@@ -1,0 +1,20 @@
+Información General Proyecto Lisa
+
+	Este proyecto aún en desarrollo fue diseñado para ser Multiplataforma, Portable y fácil de utilizar.
+
+	El objetivo del proyecto Lisa es facilitar al usuario la ejecución de programas ya instalados en su  sistema  operativo sin la necesidad de tener molestos accesos directos en el escritorio o tener que buscarlos en algún menú o lista de programas, siendo fácil de usar e interpretar, la interfáz del programa ofrece una apariencia de Widget en el escritorio muy atractiva para los usuarios y también muy interactiva.
+
+	*Para salir de la aplicación simplemente minimize con el botón minimizar y de click derecho, luego presione Salir. Otra forma es presionar el botón de insert command y escribir: salir.
+
+	Actualmente esta aplicación solo está disponible para Algunas distribuciones de Linux, Windows7 y 8, pero se planea a corto-mediano plazo que la nueva versión también funcione en Mac.
+
+	La versión actual de la aplicación es Beta 0.1.73, es decir, aún está en fase de desarrollo (testing).
+
+	Nota: Si todos los comandos intentados fallaron y muestra  el error que dice que ya no hay comandos disponibles puede  insertar el comando manualmente (si lo sabe), en el botón Insert Command.
+
+	Para más información sobre este programa por favor contacte con el desarrollador al correo:
+
+Nahum Flores Gómez
+excalibur_965@hotmail.com
+excalibur.965@gmail.com
+Facebook: facebook.com/nahumfg

@@ -1,0 +1,33 @@
+		USO GENERAL DEL PROGRAMA
+
+	Lisa es un programa bastante intuitivo y sencillo de utilizar, está diseñado para abrir programas instalados en tu sistema. Se divide en categorías generales como lo son:
+
+**Multimedia (video, música, fotos, etc.).
+
+**Internet (Navegadores web y mensajería instantánea).
+
+**Oficina (Utilidades de oficina como los programas de Office y lectores de PDF).
+
+**Herramientas (Gestor de Archivos, calculadora, línea de comandos, etc.).
+
+**Software (Pequeñas aplicaciones internas incluidas).
+
+**Ayuda (Abre información sobre Lisa para saber más sobre el programa y cómo se usa).
+
+**Ocultar (oculta el programa en la barra de tareas en forma de ícono).
+
+**Apagar (Apaga, Reinicia o Cierra la Sesión del usuario; actualmente sólo disponible en Windows).
+
+Nota: El programa guarda un registro de Actividades con fecha y hora almacenadas en un archivo de texto llamado Registro.rec y se puede ubicar mediante el botón: Ubicar Registro.
+
+		Funciones y Datos Peculiares
+
+	Lisa en su edición para escuelas y desarrolladores (School Edition), tiene la función de conectarse con placas Arduino y poder enviar cualquier caracter (a-z, A-Z, 0-9), en la nueva versión también se pueden enviar enteros (aún en pruebas). Una función bastante atractiva aunque solo sea útil de momento en laboratorios de Cómputo es una base de datos que almacene datos de alumnos y profesores, facilitar procesos como revisión de asistencia y en un futuro se planea un control de sistema remoto que permita al profesor evitar que los alumnos hagan actividades indebidas en la máquina.
+
+	Se agregaron funcionalidades especiales al programa como un reloj incorporado que muestra la hora del sistema, la función de ocultarse en la barra de tareas y algunas otras como las que se mencionan a continuación:
+
+**Multiplataforma: Lisa fue pensado para funcionar en diferentes sistemas operativos con la misma facilidad y portabilidad en cada uno de ellos, tales como, Linux (algunas distribuciones), Windows 8, Windows 8 y 8.1, próximamente en Mac.
+
+**Portable: No hay necesidad de instalar nada, simplemente tener Java instalado en tu máquina y correr el programa.
+
+**Intuitivo: La facilidad con la que se puede entender el funcionamiento del programa es excepcionalmente sencilla, ya que funciona mediante botones con íconos que representan lo más claramente posible su utilidad.
