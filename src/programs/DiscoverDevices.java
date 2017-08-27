@@ -87,7 +87,7 @@ public class DiscoverDevices {
             
         }
         splitDevices();
-        printDevices();
+        //printDevices();
     }
     public void splitDevices(){
         devicesAdressList = deviceAdress.split("\n");
@@ -100,11 +100,15 @@ public class DiscoverDevices {
         }
     }
     public String getDevicesAdress(){
-        
         return deviceAdress;
     }
     public String getDeviceFName(){
-        
         return deviceFName;
+    }
+    public String [] getDevicesAdressArray(){
+        return devicesAdressList;
+    }
+    public String [] getDevicesNamesArray(){
+        return deviceFNameList;
     }
 }
