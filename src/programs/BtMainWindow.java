@@ -16,17 +16,24 @@
  */
 package programs;
 
+import javax.swing.DefaultListModel;
+import javax.swing.JList;
+
 /**
  *
  * @author NahumFrog
  */
 public class BtMainWindow extends javax.swing.JFrame {
-
+    private DefaultListModel listModel = new DefaultListModel();
     /**
      * Creates new form BtMainWindow
      */
     public BtMainWindow() {
         initComponents();
+        this.setLocationRelativeTo(null);
+    }
+    private void setListModel(){
+        devicesJLists.setModel(listModel);
     }
     DiscoverDevices disco = new DiscoverDevices();
     /**
@@ -40,12 +47,12 @@ public class BtMainWindow extends javax.swing.JFrame {
 
         findButton = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        devicesTxt = new javax.swing.JTextArea();
         jScrollPane2 = new javax.swing.JScrollPane();
         devicesJLists = new javax.swing.JList<>();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        setMinimumSize(new java.awt.Dimension(200, 200));
 
         findButton.setText("Buscar");
         findButton.addActionListener(new java.awt.event.ActionListener() {
@@ -56,10 +63,6 @@ public class BtMainWindow extends javax.swing.JFrame {
 
         jButton2.setText("jButton2");
 
-        devicesTxt.setColumns(20);
-        devicesTxt.setRows(5);
-        jScrollPane1.setViewportView(devicesTxt);
-
         jScrollPane2.setViewportView(devicesJLists);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -69,23 +72,19 @@ public class BtMainWindow extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 501, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(findButton)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton2)))
-                .addContainerGap(95, Short.MAX_VALUE))
+                        .addComponent(jButton2)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane2)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 278, Short.MAX_VALUE))
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 278, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(findButton)
@@ -98,11 +97,19 @@ public class BtMainWindow extends javax.swing.JFrame {
 
     private void findButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_findButtonActionPerformed
         disco.discoverMethod();
-        devicesTxt.setText(disco.getDevicesAdress()+disco.getDeviceFName());
+        addDeviceToList();
     }//GEN-LAST:event_findButtonActionPerformed
 
     private void addDeviceToList(){
-        
+        disco.discoverMethod();
+        String tempList [] = disco.getDevicesAdressArray();
+        String tempList1 [] = disco.getDevicesNamesArray();
+        for (int i = 0; i < tempList.length; i++) {
+            listModel.addElement(tempList[i]+" "+tempList1[i]);
+            System.out.println(tempList[i]);
+            System.out.println(listModel);
+        }
+        setListModel();
     }
     /**
      * @param args the command line arguments
@@ -141,10 +148,8 @@ public class BtMainWindow extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JList<String> devicesJLists;
-    private javax.swing.JTextArea devicesTxt;
     private javax.swing.JButton findButton;
     private javax.swing.JButton jButton2;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     // End of variables declaration//GEN-END:variables
 }
