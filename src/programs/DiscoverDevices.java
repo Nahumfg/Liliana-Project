@@ -30,9 +30,15 @@ import javax.bluetooth.ServiceRecord;
  * @author NahumFrog
  */
 public class DiscoverDevices {
-    private final Vector/*<RemoteDevice>*/ devicesDiscovered = new Vector();
+    private final Vector/*<RemoteDevice>*/ devicesDiscovered;
     private final Object inquiryCompletedEvent = new Object();
-    private String device;
+    private String deviceAdress ="", deviceFName="";
+    private String [] devicesAdressList;
+    private String [] deviceFNameList;
+
+    public DiscoverDevices() {
+        this.devicesDiscovered = new Vector();
+    }
     public void discoverMethod(){
         
         devicesDiscovered.clear();
@@ -41,11 +47,14 @@ public class DiscoverDevices {
             DiscoveryListener listener = new DiscoveryListener() {
 
                 public void deviceDiscovered(RemoteDevice btDevice, DeviceClass cod) {
-                    System.out.println("Device " + btDevice.getBluetoothAddress() + " found");
-                    device = btDevice.getBluetoothAddress();
+                    //System.out.println("Device " + btDevice.getBluetoothAddress() + " found");
+                    deviceAdress = deviceAdress+btDevice.getBluetoothAddress()+"\n";
                     devicesDiscovered.addElement(btDevice);
+                    System.out.println(cod);
                     try {
-                        System.out.println("     name " + btDevice.getFriendlyName(false));
+                        //System.out.println("     name " + btDevice.getFriendlyName(false));
+                        deviceFName = deviceFName+btDevice.getFriendlyName(false)+"\n";
+                        
                     } catch (IOException cantGetDeviceName) {
                         
                     }
@@ -77,7 +86,25 @@ public class DiscoverDevices {
         }catch(InterruptedException e){
             
         }
-        
+        splitDevices();
+        printDevices();
     }
-    
+    public void splitDevices(){
+        devicesAdressList = deviceAdress.split("\n");
+        deviceFNameList = deviceFName.split("\n");
+    }
+    public void printDevices(){
+        for (int i = 0; i < devicesAdressList.length && i< deviceFNameList.length; i++) {
+            System.out.println("\n"+devicesAdressList[i]);
+            System.out.println(deviceFNameList[i]);
+        }
+    }
+    public String getDevicesAdress(){
+        
+        return deviceAdress;
+    }
+    public String getDeviceFName(){
+        
+        return deviceFName;
+    }
 }
