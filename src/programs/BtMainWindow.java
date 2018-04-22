@@ -105,7 +105,7 @@ public class BtMainWindow extends javax.swing.JFrame {
         String tempList [] = disco.getDevicesAdressArray();
         String tempList1 [] = disco.getDevicesNamesArray();
         for (int i = 0; i < tempList.length; i++) {
-            listModel.addElement(tempList[i]+" "+tempList1[i]);
+            listModel.addElement(tempList1[i]+" "+tempList[i]);
             System.out.println(tempList[i]);
             System.out.println(listModel);
         }

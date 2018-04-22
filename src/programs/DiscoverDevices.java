@@ -18,12 +18,7 @@ package programs;
 
 import java.io.IOException;
 import java.util.Vector;
-import javax.bluetooth.DeviceClass;
-import javax.bluetooth.DiscoveryAgent;
-import javax.bluetooth.DiscoveryListener;
-import javax.bluetooth.LocalDevice;
-import javax.bluetooth.RemoteDevice;
-import javax.bluetooth.ServiceRecord;
+import javax.bluetooth.*;
 
 /**
  *
@@ -32,6 +27,7 @@ import javax.bluetooth.ServiceRecord;
 public class DiscoverDevices {
     private final Vector/*<RemoteDevice>*/ devicesDiscovered;
     private final Object inquiryCompletedEvent = new Object();
+     static final UUID OBEX_FILE_TRANSFER = new UUID(0x1106);
     private String deviceAdress ="", deviceFName="";
     private String [] devicesAdressList;
     private String [] deviceFNameList;
@@ -71,6 +67,7 @@ public class DiscoverDevices {
             }
 
             public void servicesDiscovered(int transID, ServiceRecord[] servRecord) {
+                
             }
         };
         synchronized(inquiryCompletedEvent) {
